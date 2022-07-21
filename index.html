@@ -6,10 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Super To-Do, clã água</title>
 
-  <link rel="stylesheet" href="indexStyles.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/newTask.css">
+  <link rel="stylesheet" href="styles/tasksList.css">
 </head>
 <body>
-  <h1>Olá país da água</h1>
+  <header>
+    <img src="images/Vector.png"
+      alt="Logo da workbits" />
+    <h1>Super ToDo</h1>
+  </header>
+  <main>
+    <div class="new-task">
+      <button type="button" onclick="addTask()">+</button>
+      <input type="text" id="input-new-task" placeholder="O que você tem planejado para hoje?" />
+    </div>
+    <div id="tasks-list" class="tasks-list"></div>
+  </main>
+  <footer>
+    <span>
+      Desenvolvido pela equipe do clã da água
+    </span>
+  </footer>
 </body>
-<script src="toDoScripts.js" ></script>
+<script src="js/toDoScripts.js" ></script>
 </html>

@@ -1,0 +1,45 @@
+.new-task {
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 10px 15px;
+  width: 80%;
+  border: 0.5px solid #FFFFFF;
+  backdrop-filter: blur(42px);
+  display: flex;
+  gap: 21px;
+
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 16px;
+}
+
+.new-task input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.new-task button {
+  width: 50px;
+  height: 50px;
+  left: 278px;
+  top: 148px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+  border-radius: 20px;
+  border: none;
+  background: -moz-radial-gradient(76.75% 76.75% at 70% 23.25%, #D255DD 0%, #6709DF 100%);
+  /* background: -moz-radial-gradient(center, ellipse cover, #0047ea 0%, #151515 100%); */
+  background: radial-gradient(76.75% 76.75% at 70% 23.25%, #D255DD 0%, #6709DF 100%);
+}
+
+.new-task button:hover {
+  cursor: pointer;
+}
