@@ -62,9 +62,9 @@
 .check::after {
   content: "";
   display: none;
-  position: absolute;
-  top: 1.7rem;
-  left: 1.8rem;
+  position: relative;
+  top: 0.5rem;
+  left: 0.8rem;
 }
 
 .task-item input:checked~.check::after {
