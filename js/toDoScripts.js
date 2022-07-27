@@ -95,6 +95,22 @@ function removeLocalStorage(taskText) {
 window.onload = () => {
   let tasksJson = window.localStorage.getItem('tasks');
 
+  window.addEventListener('offline', () => {
+    document.getElementById('toast-offline').classList.remove('hidden');
+
+    setTimeout(() => {
+      document.getElementById('toast-offline').classList.add('hidden');
+    }, 5000);
+  })
+
+  window.addEventListener('online', () => {
+    document.getElementById('toast-online').classList.remove('hidden');
+
+    setTimeout(() => {
+      document.getElementById('toast-online').classList.add('hidden');
+    }, 5000);
+  })
+
   if(tasksJson !== null) {
     const today = new Date();
     tasksJson = JSON.parse(tasksJson)
