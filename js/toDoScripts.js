@@ -44,7 +44,6 @@ function addTask(addStorage = true, text = '', done = false) {
 }
 
 function addTaskKey(event, addStorage = true, text = '', done = false){
-  console.log(event.keyCode);
   if(event.key === 'Enter'){
     addTask(addStorage,text, done);
   }
