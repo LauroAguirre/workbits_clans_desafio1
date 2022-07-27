@@ -19,7 +19,7 @@
   <main>
     <div class="new-task">
       <button type="button" onclick="addTask()">+</button>
-      <input type="text" id="input-new-task" placeholder="O que você tem planejado para hoje?" />
+      <input type="text" id="input-new-task" onkeypress="addTaskKey(event)" placeholder="O que você tem planejado para hoje?" />
     </div>
     <div id="tasks-list" class="tasks-list"></div>
   </main>

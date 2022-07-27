@@ -67,6 +67,26 @@
   left: 0.8rem;
 }
 
+input:checked~ .task-text{
+  text-decoration: line-through;
+}
+
 .task-item input:checked~.check::after {
   display: block;
+}
+
+.trash-wrapper{
+  margin-left: auto;
+  margin-right: 10px;
+  height: 42px;
+}
+
+.trash{
+  margin: 7px;
+  height: 27px;
+}
+
+.trash-wrapper:hover{
+  background-color: rgba(236, 236, 236, 0.502);
+  border-radius: 25px;
 }
