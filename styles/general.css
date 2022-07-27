@@ -8,6 +8,8 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: 'Poppins';
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 body {
@@ -18,6 +20,28 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.elipse-1{
+  position: absolute;
+  width: 625px;
+  height: 625px;
+  left: -132px;
+  top: 583px;
+
+  background: radial-gradient(76.75% 76.75% at 70% 23.25%, rgba(114, 4, 123, 0.5) 0%, rgba(103, 9, 223, 0.5) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  filter: blur(200px);
+}
+
+.elipse-2{
+  position: absolute;
+  width: 625px;
+  height: 625px;
+  left: 72vw;
+  top: -216px;
+
+  background: radial-gradient(76.75% 76.75% at 70% 23.25%, rgba(114, 4, 123, 0.5) 0%, rgba(103, 9, 223, 0.5) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  filter: blur(200px);
 }
 
 header {
