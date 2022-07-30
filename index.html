@@ -9,8 +9,11 @@
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/newTask.css">
   <link rel="stylesheet" href="styles/tasksList.css">
+  <link rel="stylesheet" href="styles/toast.css">
 </head>
 <body>
+  <div class="elipse-1"></div>
+  <div class="elipse-2"></div>
   <header>
     <img src="images/Vector.png"
       alt="Logo da workbits" />
@@ -19,7 +22,7 @@
   <main>
     <div class="new-task">
       <button type="button" onclick="addTask()">+</button>
-      <input type="text" id="input-new-task" placeholder="O que você tem planejado para hoje?" />
+      <input type="text" id="input-new-task" onkeypress="addTaskKey(event)" placeholder="O que você tem planejado para hoje?" />
     </div>
     <div id="tasks-list" class="tasks-list"></div>
   </main>
@@ -28,6 +31,20 @@
       Desenvolvido pela equipe do clã da água
     </span>
   </footer>
+  <div id="toast-offline" class="toast hidden">
+    <div class="toast-alert offline"></div>
+    <p>
+      <span class="toast-title">Conexão perdida</span>
+      <span class="toast-message">Seus dados estão salvos offline</span>
+  </div>
+  <div id="toast-online" class="toast hidden">
+    <div class="toast-alert online"></div>
+    <p>
+      <span class="toast-title">Conexão restaurada</span>
+      <span class="toast-message">Seus dados estão salvos offline</span>
+  </div>
+
+  </div>
 </body>
 <script src="js/toDoScripts.js" ></script>
 </html>
